@@ -1,0 +1,13 @@
+AuthUserFile /virtual/www/tsudoi/member/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Please enter your ID and password"
+AuthType Basic
+require valid-user
+
+satisfy any
+
+order deny,allow
+deny from all
+
+# allow from 221.186.175.113
+
