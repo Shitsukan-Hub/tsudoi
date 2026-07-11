@@ -95,6 +95,19 @@
 	height: 20px;
 }
 
+.title_basic h2,
+.title_green h2,
+.title_ore h2,
+.title_darkblue h2 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 20px;
+	letter-spacing: .06em;
+}
+
 
 
 .title {
@@ -769,4 +782,119 @@ a:hover img {
 	filter: alpha(opacity=70); /* IE7以下用 */
 	-ms-filter: “alpha(opacity=70)”; /* IE8用 */
 	opacity: 0.7; /* Firefox 1.5以上, Opera, Safari用 */
+}
+
+/* High-resolution, text-based replacements for legacy image navigation. */
+#logo a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 210px;
+	height: 210px;
+	background: #28877b;
+	color: #fff;
+	font-family: "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", serif;
+	font-size: 34px;
+	font-weight: normal;
+	line-height: 2;
+	letter-spacing: .22em;
+	text-align: center;
+	text-decoration: none;
+}
+#logo a::before {
+	content: "質 感 の\Aつ ど い";
+	white-space: pre;
+}
+#logo img {
+	display: none;
+}
+
+.nav a {
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	width: 222px;
+	height: 52px;
+	padding: 0 16px 0 38px;
+	border-top: 1px solid #fff;
+	background: linear-gradient(#fff, #e9e9e9);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .16);
+	color: #555;
+	font-size: 14px;
+	line-height: 1.3;
+	position: relative;
+	text-decoration: none;
+}
+.nav a::before {
+	content: "";
+	position: absolute;
+	left: 17px;
+	top: 50%;
+	width: 7px;
+	height: 7px;
+	border-top: 2px solid #42b9ac;
+	border-right: 2px solid #42b9ac;
+	transform: translateY(-50%) rotate(45deg);
+}
+.nav a:hover,
+.nav a:focus-visible {
+	background: #fff;
+	color: #237e6f;
+}
+.nav img {
+	display: none;
+}
+
+.pagetop a {
+	display: inline-flex;
+	align-items: flex-end;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 110px;
+	height: 60px;
+	padding-bottom: 3px;
+	background: linear-gradient(to bottom, #69beb5 0 33px, #111 33px 36px, transparent 36px);
+	color: #43b7aa;
+	font-size: 12px;
+	line-height: 18px;
+	position: relative;
+	text-decoration: none;
+}
+.pagetop a::before {
+	content: "ページトップへ戻る";
+}
+.pagetop a::after {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	margin: 0 0 40px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	transform: rotate(45deg);
+}
+.pagetop img {
+	display: none;
+}
+
+.foot_logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	background: #28877b;
+	color: #fff;
+	font-family: "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", serif;
+	font-size: 16px;
+	line-height: 2;
+	letter-spacing: .18em;
+	text-align: center;
+}
+.foot_logo::before {
+	content: "質 感 の\Aつ ど い";
+	white-space: pre;
+}
+.foot_logo img {
+	display: none;
 }
